@@ -320,14 +320,14 @@ welcome-bounty:
 
 ## ⚡ Support
 
-Join Discord Server for help or updates:
-[click here](https://discord.gg/6gCFHFHsbD)
+Join Discord Server for help or updates: Initial Release
+[<img width="2172" height="724" alt="discordhelpbanner" src="https://github.com/user-attachments/assets/c4279560-b178-416c-9084-9390f2bc4195" />
+](https://discord.gg/6gCFHFHsbD)
 
 ---
-
 ## 📌 Version
+**1.0 - Initial Release**
 
-###`1.0 - Initial Release`
 ---
 
 ## 🔥 Example Preview
