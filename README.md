@@ -2,7 +2,7 @@
 
 
 A powerful, lightweight and fully configurable Minecraft Paper plugin that enhances your server's join/leave experience with ranks, messages, commands execution, sounds, titles, fireworks, and a full welcome bounty system.
-
+Supports 1.21+
 ---
 
 ## 🚀 Features
