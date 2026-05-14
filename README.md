@@ -83,9 +83,9 @@ Encourages player interaction:
 - Sound effects
 
 ---
-<div align="center">
+<div>
 <details>
-<summary>[ 📄 Click to view config.yml ]</summary>
+<summary align="center">[ 📄 Click to view config.yml ]</summary>
 
 ```yaml
 #=====================================================================
