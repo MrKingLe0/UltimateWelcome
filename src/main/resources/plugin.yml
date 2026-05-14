@@ -1,0 +1,29 @@
+name: UltimateWelcome
+version: 1.0
+main: ultimatewelcome.Main
+api-version: '1.21'
+
+commands:
+  wb:
+    description: Welcomes a recently joined player
+    usage: /wb <player>
+
+  uwreload:
+    description: Reloads plugin config
+    usage: /uwreload
+    permission: uw.reload
+
+  uw:
+    description: Admin commands for UltimateWelcome
+    usage: /uw <subcommand> [args]
+    permission: uw.admin
+    aliases: [ultimatewelcome]
+
+permissions:
+  uw.admin:
+    description: Allows access to /uw command
+    default: op
+
+  uw.reload:
+    description: Allows reloading the UltimateWelcome config
+    default: op
