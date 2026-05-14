@@ -52,7 +52,7 @@ A powerful, lightweight and fully configurable Minecraft Paper plugin that enhan
 
 ## 💡 Placeholders
 
-You can use these in certain messages or commands:
+You can use these in certain messages or commands on config.yml file:
 
 - `%player%` → Player name  
 - `%target%` → Target player (welcome bounty)  
