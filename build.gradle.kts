@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.0.21"
+    java
 }
 
 group = "ultimatewelcome"
@@ -7,7 +7,6 @@ version = "1.0"
 
 repositories {
     mavenCentral()
-
     maven("https://repo.papermc.io/repository/maven-public/")
 }
 
