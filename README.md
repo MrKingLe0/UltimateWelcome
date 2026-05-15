@@ -97,7 +97,7 @@ Encourages player interaction:
 #\____/_/\__/_/_/_/_/\_,_/\__/\__/   |__/|__/\__/_/\__/\___/_/_/_/\__/ 
 #                                                                      
 #======================================================================
-#Thanks for downloading UltimateWelcome V1.1!
+# Thanks for downloading UltimateWelcome V1.1!
 # If you have any questions or need help, feel free to join the support discord server: https://discord.gg/6gCFHFHsbD
 
 # Enable or disable the entire welcome plugin
