@@ -1,22 +1,44 @@
 <img width="1774" height="887" alt="UltimateWelcome" src="https://github.com/user-attachments/assets/aefacb66-d0b9-438c-b98e-300d315e32a6" />
 
-A powerful, lightweight and fully configurable Minecraft Paper plugin that enhances your server's join/leave experience with ranks, messages, commands execution, sounds, titles, fireworks, and a full welcome bounty system.
+A powerful, lightweight and fully configurable Minecraft Paper plugin that enhances your server's join/leave experience with ranks, messages, commands execution, sounds, titles, fireworks,bossbars and a full welcome bounty system.
 
 Supports 1.21+
 
 ---
 
+<div align="center">
+
+# Now Avaliable on
+
+<a href="https://github.com/MrKingLe0/UltimateWelcome/" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white&labelColor=161B22">
+</a>
+
+<a href="https://builtbybit.com/" target="_blank">
+  <img height="28" width="155" src="https://github.com/user-attachments/assets/1f89487d-3670-411f-8499-587306e585bf" alt="BuiltByBit" />
+</a>
+
+<a href="https://modrinth.com/plugin/ultimatewelcome" target="_blank">
+  <img src="https://img.shields.io/badge/Modrinth-00C76F?style=for-the-badge&logo=modrinth&logoColor=white&labelColor=009E5B">
+</a>
+
+</div>
+
+---
+
 ## 🚀 Features
 
-✔ Rank-based welcome messages  
+✔ Rank-based welcome messages
+✔ Supports all color formats
 ✔ Join & leave broadcasts  
 ✔ Custom join titles  
-✔ Sounds & fireworks on join  
+✔ Sounds & fireworks on join 
+✔ Custom Bossbar with fully configurable animation
 ✔ Console & player join commands  
-✔ Rank-based join commands  
+✔ Rank-based join commands
 ✔ Welcome bounty system (reward players for welcoming others)  
 ✔ Fully customizable config  
-✔ Placeholder support like `%player%` and `%target%`  
+✔ Placeholder support like `%player%` and `%target%`
 
 ---
 
