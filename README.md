@@ -15,7 +15,7 @@ Supports 1.21+
 </a>
 
 <a href="https://builtbybit.com/" target="_blank">
-  <img height="28" width="155" src="https://github.com/user-attachments/assets/1f89487d-3670-411f-8499-587306e585bf" alt="BuiltByBit" />
+  <img height="24" width="155" src="https://github.com/user-attachments/assets/1f89487d-3670-411f-8499-587306e585bf" alt="BuiltByBit" />
 </a>
 
 <a href="https://modrinth.com/plugin/ultimatewelcome" target="_blank">
