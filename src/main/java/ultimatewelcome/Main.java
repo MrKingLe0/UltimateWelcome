@@ -2,7 +2,11 @@ package ultimatewelcome;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
+
+import java.io.File;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
@@ -13,10 +17,22 @@ public class Main extends JavaPlugin {
 
     private final Map<UUID, Long> joinTimes = new ConcurrentHashMap<>();
     private final Map<String, Long> welcomeCooldowns = new ConcurrentHashMap<>();
+    private FileConfiguration settingsMessages;
+    private BossBarManager bossBarManager;
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
+        
+        // Save default settings-messages.yml if it doesn't exist
+        if (!new File(getDataFolder(), "settings-messages.yml").exists()) {
+            saveResource("settings-messages.yml", false);
+        }
+
+        this.bossBarManager = new BossBarManager(this);
+
+        // Load settings messages
+        settingsMessages = YamlConfiguration.loadConfiguration(new File(getDataFolder(), "settings-messages.yml"));
 
         Bukkit.getConsoleSender().sendMessage(
                 "§9[UltimateWelcome] §aPlugin Enabled! §7v" +
@@ -30,7 +46,6 @@ public class Main extends JavaPlugin {
                 "§b     \\____/_/\\__/_/_/_/_/\\_,_/\\__/\\__/   |__/|__/\\__/_/\\__/\\___/_/_/_/\\__/\n\n" +
                 "§d  =============================================================================="
         );
-
 
         // EVENTS
         getServer().getPluginManager().registerEvents(new JoinListener(this), this);
@@ -57,6 +72,16 @@ public class Main extends JavaPlugin {
         }
     }
 
+    // Getter for settings messages
+    public FileConfiguration getSettingsMessages() {
+        return settingsMessages;
+    }
+
+    // Reload method
+    public void reloadSettingsMessages() {
+        settingsMessages = YamlConfiguration.loadConfiguration(new File(getDataFolder(), "settings-messages.yml"));
+    }
+
     // JOIN TIME TRACKING
     public void recordJoin(UUID uuid) {
         joinTimes.put(uuid, System.currentTimeMillis());
@@ -64,6 +89,10 @@ public class Main extends JavaPlugin {
 
     public Long getJoinTime(UUID uuid) {
         return joinTimes.get(uuid);
+    }
+    // BOSS BAR MANAGER
+    public BossBarManager getBossBarManager() {
+    return bossBarManager;
     }
 
     public void executeConfiguredCommand(Player player, String commandLine) {
@@ -155,6 +184,5 @@ public class Main extends JavaPlugin {
                 "§b     \\____/_/\\__/_/_/_/_/\\_,_/\\__/\\__/   |__/|__/\\__/_/\\__/\\___/_/_/_/\\__/\n\n" +
                 "§d  =============================================================================="
         );
-
     }
 }

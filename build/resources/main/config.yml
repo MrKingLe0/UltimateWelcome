@@ -5,7 +5,7 @@
 #\____/_/\__/_/_/_/_/\_,_/\__/\__/   |__/|__/\__/_/\__/\___/_/_/_/\__/ 
 #                                                                      
 #======================================================================
-#Thanks for downloading UltimateWelcome V1.0!
+#Thanks for downloading UltimateWelcome V1.1!
 # If you have any questions or need help, feel free to join the support discord server: https://discord.gg/6gCFHFHsbD
 
 # Enable or disable the entire welcome plugin
@@ -26,6 +26,16 @@ rank-order:
 #                        JOIN SYSTEM
 #===================================================================
 
+# ------------ COLOR FORMATING ---------------
+
+# You can use the following color and formatting codes in messages:
+# Legacy Colors:  &0-&f  (e.g., &cRed, &aGreen)
+# Formatting:     &l Bold, &o Italic, &n Underline, &m Strikethrough, &r Reset
+# Legacy Hex:     &x&R&R&G&G&B&B  (e.g., &x&F&F&0&0&0&0 = #FF0000)
+# Modern Hex:     &#RRGGBB  (e.g., &#FF0000Red)
+# MiniMessage:    <red>text, <gradient:red:blue>text</gradient>, <rainbow>text</rainbow>
+
+
 # Player Will see this message on that after they join. There's a 1 second delay before the message is sent to the player. You can use %player% as a placeholder for the player's name.
 # If not set, it will use default messages in the welcome-messages.
 welcome-messages:
@@ -33,26 +43,27 @@ welcome-messages:
   messages:
     owner:
       - "========================================="
-      - "                &5&lsᴇʀᴠᴇʀ_ɴᴀᴍᴇ"
+      - "                <b><gradient:#FF0000:#9400FF>sᴇʀᴠᴇʀ_ɴᴀᴍᴇ</gradient></b>"
       - "            &4&lᴡᴇʟᴄᴏᴍᴇ &f%player% &4&l!"
       - " &cʜᴏᴘᴇ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴ &6ᴀᴍᴀᴢɪɴɢ &cʀᴇsᴛ ᴏғ ʏᴏᴜʀ sᴛᴀʏ!"
       - ""
       - "          &bᴡᴇʙsɪᴛᴇ: &fwww.example.com"
       - "         &9ᴅɪsᴄᴏʀᴅ: &fdiscord.gg/example"
+      - " <gradient:#FF5555:#FFAA00:#FFFF55>✨ ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ᴜʟᴛɪᴍᴀᴛᴇᴡᴇʟᴄᴏᴍᴇ V1.1 ✨</gradient> <gray>by <gradient:#55FF55:#00AA00>KingLe0</gradient></gray>"
       - "========================================="
     vip:
       - "========================================="
-      - "                &5&lsᴇʀᴠᴇʀ_ɴᴀᴍᴇ"
+      - "                <b><gradient:#FF0000:#9400FF>sᴇʀᴠᴇʀ_ɴᴀᴍᴇ</gradient></b>"
       - ""
-      - "          &d&lᴡᴇʟᴄᴏᴍᴇ &a&lVIP &f%player% &d&l!"
-      - "    &9ᴡᴇ ʜᴀᴠᴇ ʙᴇᴇᴅɴ ᴡᴀɪᴛɪɴɢ ᴊᴜsᴛ ꜰᴏʀ ʏᴏᴜ!"
+      - "          <b><gradient:#FF0000:#0300FF>ᴡᴇʟᴄᴏᴍᴇ <color:#FFFF00>%player%</color> <gradient:#FF0000:#0300FF>!</gradient></b>"
+      - "    <color:#999999>ᴡᴇ ʜᴀᴠᴇ ʙᴇᴇᴅ ᴡᴀɪᴛɪɴɢ ᴊᴜsᴛ ꜰᴏʀ ʏᴏᴜ!</color>"
       - ""
       - "          &bᴡᴇʙsɪᴛᴇ: &fwww.example.com"
       - "        &9ᴅɪsᴄᴏʀᴅ: &fdiscord.gg/example"
       - "========================================="
     default:
       - "========================================="
-      - "                &5&lsᴇʀᴠᴇʀ_ɴᴀᴍᴇ"
+      - "                <b><gradient:#FF0000:#9400FF>sᴇʀᴠᴇʀ_ɴᴀᴍᴇ</gradient></b>"
       - "           &d&lᴡᴇʟᴄᴏᴍᴇ &f%player% &d&l!"
       - "       &9ʜᴏᴘᴇ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴ &aᴀᴍᴀᴢɪɴɴɢ &9sᴛᴀʏ!"
       - ""
@@ -65,7 +76,7 @@ welcome-broadcasts:
   enabled: true
   messages:
     owner:
-      - "&6ᴛʜᴇ ᴏᴡɴᴇʀ &4&l%player% &6ᴊᴏɪɴᴇᴅ ᴛʜᴇ sᴇʀᴠᴇʀ!"
+      - "<b><gradient:#FF0000:#0300FF>ᴛʜᴇ ᴏᴡɴᴇʀ %player% ᴊᴏɪɴᴇᴅ ᴛʜᴇ sᴇʀᴠᴇʀ</gradient></b>"
     vip:
       - "&a&lVIP &e%player% &aᴊᴏɪɴᴇᴅ ᴛʜᴇ sᴇʀᴠᴇʀ!"
       - "&f[&a!&f] &eᴛʏᴘᴇ &f/wb <ᴘʟᴀʏᴇʀɴᴀᴍᴇ> &eᴛᴏ ᴡᴇʟᴄᴏᴍᴇ ᴛʜᴇ ᴘʟᴀʏᴇʀ ᴀɴᴅ ʀᴇᴄɪᴠᴇ &6EXTRA &eʀᴇᴡᴀʀᴅs!"
@@ -130,6 +141,32 @@ firework:
     - "CYAN"
 
   type: "BALL"
+
+# JOIN BOSSBAR
+
+bossbar:
+  enabled: true
+  # How long the bossbar stays visible (in seconds)
+  duration: 20
+  # Bossbar text (supports %player% placeholder and all color formats)
+  text: "<gradient:#FF0000:#FFAA00>✨ ᴡᴇʟᴄᴏᴍᴇ %player%! ✨</gradient>"
+  # Bossbar color (PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE)
+  color: "PURPLE"
+  # Bossbar style (SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20)
+  style: "SOLID"
+  
+  # Loop color settings
+  loop-color:
+    enabled: true
+    # How often the color changes (in seconds)
+    interval: 1
+    # Colors to cycle through
+    colors:
+      - "PURPLE"
+      - "BLUE"
+      - "GREEN"
+      - "YELLOW"
+      - "RED"
 
 #===================================================================
 #                        LEAVE SYSTEM

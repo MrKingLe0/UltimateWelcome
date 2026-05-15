@@ -1,9 +1,7 @@
 package ultimatewelcome;
-
+import ultimatewelcome.utils.MessageUtil;
 import java.util.List;
-
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -42,23 +40,25 @@ public class LeaveListener implements Listener {
 
                 String msg = line.replace("%player%", player.getName());
 
-                Bukkit.broadcastMessage(
-                        ChatColor.translateAlternateColorCodes('&', msg)
+                Bukkit.broadcast(
+                        MessageUtil.parse(msg)
                 );
             }
         }
 
-        // GLOBAL LEAVE COMMANDS (ALL RANKS)
+        // GLOBAL LEAVE COMMANDS
         List<String> globalCmds = plugin.getConfig().getStringList("on-leave-commands");
 
         for (String cmd : globalCmds) {
+
             if (cmd == null || cmd.isEmpty()) continue;
 
             String finalCmd = cmd.replace("%player%", player.getName());
+
             plugin.executeConfiguredCommand(player, finalCmd);
         }
 
-        // RANK LEAVE COMMANDS (ONLY FOR SPECIFIC RANKS)
+        // RANK LEAVE COMMANDS
         if (plugin.getConfig().getBoolean("leave-rank-commands.enabled", false)) {
 
             List<String> rankCmds = plugin.getConfig().getStringList(
@@ -70,17 +70,20 @@ public class LeaveListener implements Listener {
                 if (cmd == null || cmd.isEmpty()) continue;
 
                 String finalCmd = cmd.replace("%player%", player.getName());
+
                 plugin.executeConfiguredCommand(player, finalCmd);
             }
         }
     }
 
-    // RANK DETECTION METHOD
+    // RANK DETECTION
     private String getPrimaryRank(Player player) {
 
         for (String rank : plugin.getConfig().getStringList("rank-order")) {
 
             String clean = rank.toLowerCase().trim();
+
+            if (clean.isEmpty()) continue;
 
             if (player.hasPermission("group." + clean)
                     || player.hasPermission(clean)) {

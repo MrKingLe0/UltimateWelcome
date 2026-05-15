@@ -1,7 +1,8 @@
 package ultimatewelcome;
 
-import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
+import ultimatewelcome.utils.MessageUtil;
 import net.kyori.adventure.title.Title;
+
 import org.bukkit.Color;
 import org.bukkit.FireworkEffect;
 import org.bukkit.entity.Firework;
@@ -39,7 +40,6 @@ public class JoinListener implements Listener {
                     "welcome-messages.messages." + primaryRank
             );
 
-            // Fallback to default
             if (messages.isEmpty()) {
                 messages = plugin.getConfig().getStringList(
                         "welcome-messages.messages.default"
@@ -49,11 +49,19 @@ public class JoinListener implements Listener {
             final List<String> finalMessages = messages;
 
             plugin.getServer().getScheduler().runTaskLater(plugin, () -> {
+
                 for (String line : finalMessages) {
+
                     String formatted = line.replace("%player%", name);
-                    player.sendMessage(color(formatted));
+
+                    player.sendMessage(MessageUtil.parse(formatted));
                 }
+
             }, 20L);
+        }
+        // BOSS BAR
+        if (plugin.getConfig().getBoolean("bossbar.enabled", true)) {
+            plugin.getBossBarManager().showBossBar(player);
         }
 
         // GLOBAL JOIN COMMANDS
@@ -61,9 +69,7 @@ public class JoinListener implements Listener {
 
         for (String cmd : joinCommands) {
 
-            if (cmd == null || cmd.isEmpty()) {
-                continue;
-            }
+            if (cmd == null || cmd.isEmpty()) continue;
 
             String formatted = cmd.replace("%player%", name);
 
@@ -85,9 +91,7 @@ public class JoinListener implements Listener {
 
             for (String cmd : rankCommands) {
 
-                if (cmd == null || cmd.isEmpty()) {
-                    continue;
-                }
+                if (cmd == null || cmd.isEmpty()) continue;
 
                 String formatted = cmd.replace("%player%", name);
 
@@ -102,7 +106,6 @@ public class JoinListener implements Listener {
                     "welcome-broadcasts.messages." + primaryRank
             );
 
-            // Fallback to default
             if (broadcasts.isEmpty()) {
                 broadcasts = plugin.getConfig().getStringList(
                         "welcome-broadcasts.messages.default"
@@ -117,8 +120,8 @@ public class JoinListener implements Listener {
 
                     String formatted = line.replace("%player%", name);
 
-                    plugin.getServer().broadcastMessage(
-                            color(formatted)
+                    plugin.getServer().sendMessage(
+                            MessageUtil.parse(formatted)
                     );
                 }
 
@@ -130,17 +133,15 @@ public class JoinListener implements Listener {
 
             String main = plugin.getConfig()
                     .getString("title.main", "")
-                    .replace("%player%", name)
-                    .replace("&", "§");
+                    .replace("%player%", name);
 
             String sub = plugin.getConfig()
                     .getString("title.sub", "")
-                    .replace("%player%", name)
-                    .replace("&", "§");
+                    .replace("%player%", name);
 
             Title title = Title.title(
-                    LegacyComponentSerializer.legacySection().deserialize(main),
-                    LegacyComponentSerializer.legacySection().deserialize(sub),
+                    MessageUtil.parse(main),
+                    MessageUtil.parse(sub),
                     Title.Times.times(
                             Duration.ofSeconds(plugin.getConfig().getInt("title.fade-in", 1)),
                             Duration.ofSeconds(plugin.getConfig().getInt("title.stay", 3)),
@@ -185,15 +186,11 @@ public class JoinListener implements Listener {
                     }
 
                     meta.addEffect(builder.build());
-
-                    meta.setPower(
-                            plugin.getConfig().getInt("firework.power", 1)
-                    );
+                    meta.setPower(plugin.getConfig().getInt("firework.power", 1));
 
                     firework.setFireworkMeta(meta);
 
                 } catch (Exception e) {
-
                     plugin.getLogger().warning(
                             "Firework error for " + name + ": " + e.getMessage()
                     );
@@ -208,17 +205,10 @@ public class JoinListener implements Listener {
             String soundName = plugin.getConfig().getString(
                     "sound.type",
                     "entity.player.levelup"
-            );
-            soundName = soundName.toLowerCase().replace("_", ".");
-            float volume = (float) plugin.getConfig().getDouble(
-                    "sound.volume",
-                    1.0
-            );
+            ).toLowerCase().replace("_", ".");
 
-            float pitch = (float) plugin.getConfig().getDouble(
-                    "sound.pitch",
-                    1.0
-            );
+            float volume = (float) plugin.getConfig().getDouble("sound.volume", 1.0);
+            float pitch = (float) plugin.getConfig().getDouble("sound.pitch", 1.0);
 
             try {
 
@@ -254,9 +244,7 @@ public class JoinListener implements Listener {
 
             String cleanRank = rank.toLowerCase().trim();
 
-            if (cleanRank.isEmpty()) {
-                continue;
-            }
+            if (cleanRank.isEmpty()) continue;
 
             if (player.hasPermission("group." + cleanRank)
                     || player.hasPermission(cleanRank)) {
@@ -270,9 +258,7 @@ public class JoinListener implements Listener {
 
     private Color getColor(String name) {
 
-        if (name == null) {
-            return Color.WHITE;
-        }
+        if (name == null) return Color.WHITE;
 
         return switch (name.toUpperCase()) {
 
@@ -289,9 +275,5 @@ public class JoinListener implements Listener {
 
             default -> Color.WHITE;
         };
-    }
-
-    private String color(String msg) {
-        return org.bukkit.ChatColor.translateAlternateColorCodes('&', msg);
     }
 }

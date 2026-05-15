@@ -1,0 +1,39 @@
+# This is the language file for some setting messages.
+# You can customize the messages for different languages here.
+# The keys in this file correspond to the keys used in the config.yml file for settings messages.
+# You can use color codes and placeholders in these messages as well.
+
+plugin-reload:
+  success: "<gradient:#55FF55:#00AA00>✅ ᴘʟᴜɢɪɴ ʀᴇʟᴏᴀᴅᴇᴅ sᴜᴄᴄᴇssꜰᴜʟʟʏ!</gradient>"
+  error: "<gradient:#FF5555:#AA0000>❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ʀᴇʟᴏᴀᴅɪɴɢ! ᴄʜᴇᴄᴋ ᴄᴏɴsᴏʟᴇ ꜰᴏʀ ᴅᴇᴛᴀɪʟs.</gradient>"
+
+
+uw-help:
+  header: "<gradient:#FFAA00:#FF5500>━━━━━━━━ <bold>ᴡᴇʟᴄᴏᴍᴇ ᴄᴏᴍᴍᴀɴᴅs</bold> ━━━━━━━━</gradient>"
+  wb: "<yellow>/ᴡʙ <ᴘʟᴀʏᴇʀ></yellow> <gray>- ᴡᴇʟᴄᴏᴍᴇ ᴀ ᴘʟᴀʏᴇʀ ᴀɴᴅ ᴇᴀʀɴ ʀᴇᴡᴀʀᴅs!</gray>"
+  uw-forcewelcome: "<red>/ᴜᴡ ꜰᴏʀᴄᴇᴡᴇʟᴄᴏᴍᴇ <ᴘʟᴀʏᴇʀ></red> <gray>- ꜰᴏʀᴄᴇ ᴡᴇʟᴄᴏᴍᴇ ᴀ ᴘʟᴀʏᴇʀ</gray>"
+  uw-resetcooldown: "<red>/ᴜᴡ ʀᴇsᴇᴛᴄᴏᴏʟᴅᴏᴡɴ <ᴘʟᴀʏᴇʀ></red> <gray>- ʀᴇsᴇᴛ ᴄᴏᴏʟᴅᴏᴡɴ</gray>"
+  uw-welcomeself: "<red>/ᴜᴡ ᴡᴇʟᴄᴏᴍᴇsᴇʟꜰ</red> <gray>- ᴛᴏɢɢʟᴇ sᴇʟꜰ-ᴡᴇʟᴄᴏᴍᴇ</gray>"
+  uw-reload: "<red>/ᴜᴡʀᴇʟᴏᴀᴅ</red> <gray>- ʀᴇʟᴏᴀᴅ ᴄᴏɴꜰɪɢ</gray>"
+  footer: "<gradient:#FFAA00:#FF5500>━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+
+uw-forcewelcome:
+  success: "<gradient:#55FF55:#00FF00>✅ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇ sᴇɴᴛ ᴛᴏ <yellow>%target%</yellow>!</gradient>"
+  error: "<gradient:#FF5555:#FF0000>❌ ꜰᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇ! ᴄʜᴇᴄᴋ ᴄᴏɴsᴏʟᴇ.</gradient>"
+uw-selfwelcome:
+  enabled: "<gradient:#55FF55:#00FF00>✅ sᴇʟꜰ-ᴡᴇʟᴄᴏᴍᴇ ɪs ɴᴏᴡ <bold>ᴇɴᴀʙʟᴇᴅ</bold>! ᴘʟᴀʏᴇʀs ᴄᴀɴ ᴡᴇʟᴄᴏᴍᴇ ᴛʜᴇᴍsᴇʟᴠᴇs.</gradient>"
+  disabled: "<gradient:#FF5555:#FF0000>🔒 sᴇʟꜰ-ᴡᴇʟᴄᴏᴍᴇ ɪs ɴᴏᴡ <bold>ᴅɪsᴀʙʟᴇᴅ</bold>! ᴘʟᴀʏᴇʀs ᴄᴀɴɴᴏᴛ ᴡᴇʟᴄᴏᴍᴇ ᴛʜᴇᴍsᴇʟᴠᴇs.</gradient>"
+uw-resetcooldown:
+  success: "<gradient:#55FF55:#00AA00>🔄 ᴄᴏᴏʟᴅᴏᴡɴ ꜰᴏʀ <yellow>%target%</yellow> ʜᴀs ʙᴇᴇɴ ʀᴇsᴇᴛ!</gradient>"
+  error: "<gradient:#FF5555:#AA0000>❌ ꜰᴀɪʟᴇᴅ ᴛᴏ ʀᴇsᴇᴛ ᴄᴏᴏʟᴅᴏᴡɴ! ᴄʜᴇᴄᴋ ᴄᴏɴsᴏʟᴇ.</gradient>"
+
+uw-unknownsubcommand: "<gradient:#FFAA00:#FF5500>⚠️ ᴜɴᴋɴᴏᴡɴ sᴜʙᴄᴏᴍᴍᴀɴᴅ! ᴜsᴇ <yellow>/ᴜᴡ ʜᴇʟᴘ</yellow> ꜰᴏʀ ᴀ ʟɪsᴛ.</gradient>"
+uw-only-players: "<gradient:#FF5555:#FF0000>🚫 ᴏɴʟʏ ᴘʟᴀʏᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ!</gradient>"
+uw-no-permission: "<gradient:#FF5555:#FF0000>🔒 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ!</gradient>"
+
+
+wb-player-not-found: "<gradient:#FF5555:#FF0000>🔍 ᴘʟᴀʏᴇʀ <yellow>%target%</yellow> ɴᴏᴛ ꜰᴏᴜɴᴅ ᴏʀ ɴᴏᴛ ᴏɴʟɪɴᴇ!</gradient>"
+wb-cooldown: "<gradient:#FFAA00:#FF5500>⏳ ʏᴏᴜ ᴍᴜsᴛ ᴡᴀɪᴛ <yellow>%time%</yellow> ʙᴇꜰᴏʀᴇ ᴡᴇʟᴄᴏᴍɪɴɢ <yellow>%target%</yellow> ᴀɢᴀɪɴ!</gradient>"
+wb-expired: "<gradient:#FF5555:#FF0000>⏰ <yellow>%target%</yellow> ᴄᴀɴ ɴᴏ ʟᴏɴɢᴇʀ ʙᴇ ᴡᴇʟᴄᴏᴍᴇᴅ! ᴛʜᴇʏ ᴊᴏɪɴᴇᴅ ᴏᴠᴇʀ <yellow>%time%</yellow> ᴀɢᴏ.</gradient>"
+wb-no-reward: "<gradient:#FFAA00:#FF5500>🎁 ɴᴏ ʀᴇᴡᴀʀᴅ ᴀᴠᴀɪʟᴀʙʟᴇ ꜰᴏʀ ᴡᴇʟᴄᴏᴍɪɴɢ <yellow>%target%</yellow>! ɴᴏ ʀᴇᴡᴀʀᴅ ᴄᴏɴꜰɪɢᴜʀᴇᴅ ꜰᴏʀ ᴛʜᴇɪʀ ʀᴀɴᴋ.</gradient>"
+wb-no-selfwelcome: "<gradient:#FF5555:#FF0000>🚫 ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴡᴇʟᴄᴏᴍᴇ ʏᴏᴜʀsᴇʟꜰ!</gradient>"
