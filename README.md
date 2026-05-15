@@ -326,14 +326,30 @@ Join Discord Server for help or updates:
 ](https://discord.gg/6gCFHFHsbD)
 
 ---
-## 📌 Version
-**1.0 - Initial Release**
+<div align="center">
 
----
+# Example Preview
 
-## 🔥 Example Preview
-<img width="772" height="235" alt="image" src="https://github.com/user-attachments/assets/ff978626-3e23-43c0-8d90-37979f440c6d" />
-<img width="952" height="58" alt="image" src="https://github.com/user-attachments/assets/3db07e2a-dc5d-499d-a3e6-ad594344c30e" />
-<img width="837" height="57" alt="image" src="https://github.com/user-attachments/assets/9ba09601-61c2-43a6-8254-5af678c18572" />
-<img width="865" height="137" alt="image" src="https://github.com/user-attachments/assets/6808daf4-a515-4d88-93b0-c527043f3742" />
+### 📋 Welcome Bounty
+<img width="837" src="https://github.com/user-attachments/assets/9ba09601-61c2-43a6-8254-5af678c18572" alt="Join Broadcast 2" />
+<img width="952" src="https://github.com/user-attachments/assets/3db07e2a-dc5d-499d-a3e6-ad594344c30e" alt="Join Broadcast" />
+
+### 💬 Join Broadcast Messages
+<img width="798" height="33" alt="image" src="https://github.com/user-attachments/assets/69d7f70f-0f4b-48ed-94f3-630622c3208c" />
+<img width="692" height="35" alt="image" src="https://github.com/user-attachments/assets/f62d5dce-8e66-42d8-8afa-4e3570adf334" />
+
+
+### 🎨 Welcome Messages with Gradients
+<img width="830" src="https://github.com/user-attachments/assets/d230320e-8639-43ef-babc-053a6f5051fb" alt="BossBar Display" />
+<img width="772" src="https://github.com/user-attachments/assets/ff978626-3e23-43c0-8d90-37979f440c6d" alt="Welcome Bounty Command" />
+
+### 🎮 BossBar Display
+<img width="746" src="https://github.com/user-attachments/assets/ae9cacf3-d219-4fd9-a216-9868d3aa07cf" alt="Reward Notification" />
+
+### ✅ Reward Notification
+<img width="865" src="https://github.com/user-attachments/assets/6808daf4-a515-4d88-93b0-c527043f3742" alt="Welcome Messages" />
+
+</div>
+
+
 
