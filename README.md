@@ -89,6 +89,7 @@ Encourages player interaction:
 <summary align="center">[ 📄 Click to view config.yml ]</summary>
 
 ```yaml
+
 #=====================================================================
 #  __  ______  _            __        _      __    __                  
 # / / / / / /_(_)_ _  ___ _/ /____   | | /| / /__ / /______  __ _  ___ 
@@ -96,7 +97,7 @@ Encourages player interaction:
 #\____/_/\__/_/_/_/_/\_,_/\__/\__/   |__/|__/\__/_/\__/\___/_/_/_/\__/ 
 #                                                                      
 #======================================================================
-#Thanks for downloading UltimateWelcome V1.0!
+#Thanks for downloading UltimateWelcome V1.1!
 # If you have any questions or need help, feel free to join the support discord server: https://discord.gg/6gCFHFHsbD
 
 # Enable or disable the entire welcome plugin
@@ -117,6 +118,16 @@ rank-order:
 #                        JOIN SYSTEM
 #===================================================================
 
+# ------------ COLOR FORMATING ---------------
+
+# You can use the following color and formatting codes in messages:
+# Legacy Colors:  &0-&f  (e.g., &cRed, &aGreen)
+# Formatting:     &l Bold, &o Italic, &n Underline, &m Strikethrough, &r Reset
+# Legacy Hex:     &x&R&R&G&G&B&B  (e.g., &x&F&F&0&0&0&0 = #FF0000)
+# Modern Hex:     &#RRGGBB  (e.g., &#FF0000Red)
+# MiniMessage:    <red>text, <gradient:red:blue>text</gradient>, <rainbow>text</rainbow>
+
+
 # Player Will see this message on that after they join. There's a 1 second delay before the message is sent to the player. You can use %player% as a placeholder for the player's name.
 # If not set, it will use default messages in the welcome-messages.
 welcome-messages:
@@ -124,26 +135,27 @@ welcome-messages:
   messages:
     owner:
       - "========================================="
-      - "                &5&lsᴇʀᴠᴇʀ_ɴᴀᴍᴇ"
+      - "                <b><gradient:#FF0000:#9400FF>sᴇʀᴠᴇʀ_ɴᴀᴍᴇ</gradient></b>"
       - "            &4&lᴡᴇʟᴄᴏᴍᴇ &f%player% &4&l!"
       - " &cʜᴏᴘᴇ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴ &6ᴀᴍᴀᴢɪɴɢ &cʀᴇsᴛ ᴏғ ʏᴏᴜʀ sᴛᴀʏ!"
       - ""
       - "          &bᴡᴇʙsɪᴛᴇ: &fwww.example.com"
       - "         &9ᴅɪsᴄᴏʀᴅ: &fdiscord.gg/example"
+      - " <gradient:#FF5555:#FFAA00:#FFFF55>✨ ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ᴜʟᴛɪᴍᴀᴛᴇᴡᴇʟᴄᴏᴍᴇ V1.1 ✨</gradient> <gray>by <gradient:#55FF55:#00AA00>KingLe0</gradient></gray>"
       - "========================================="
     vip:
       - "========================================="
-      - "                &5&lsᴇʀᴠᴇʀ_ɴᴀᴍᴇ"
+      - "                <b><gradient:#FF0000:#9400FF>sᴇʀᴠᴇʀ_ɴᴀᴍᴇ</gradient></b>"
       - ""
-      - "          &d&lᴡᴇʟᴄᴏᴍᴇ &a&lVIP &f%player% &d&l!"
-      - "    &9ᴡᴇ ʜᴀᴠᴇ ʙᴇᴇᴅɴ ᴡᴀɪᴛɪɴɢ ᴊᴜsᴛ ꜰᴏʀ ʏᴏᴜ!"
+      - "          <b><gradient:#FF0000:#0300FF>ᴡᴇʟᴄᴏᴍᴇ <color:#FFFF00>%player%</color> <gradient:#FF0000:#0300FF>!</gradient></b>"
+      - "    <color:#999999>ᴡᴇ ʜᴀᴠᴇ ʙᴇᴇᴅ ᴡᴀɪᴛɪɴɢ ᴊᴜsᴛ ꜰᴏʀ ʏᴏᴜ!</color>"
       - ""
       - "          &bᴡᴇʙsɪᴛᴇ: &fwww.example.com"
       - "        &9ᴅɪsᴄᴏʀᴅ: &fdiscord.gg/example"
       - "========================================="
     default:
       - "========================================="
-      - "                &5&lsᴇʀᴠᴇʀ_ɴᴀᴍᴇ"
+      - "                <b><gradient:#FF0000:#9400FF>sᴇʀᴠᴇʀ_ɴᴀᴍᴇ</gradient></b>"
       - "           &d&lᴡᴇʟᴄᴏᴍᴇ &f%player% &d&l!"
       - "       &9ʜᴏᴘᴇ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴ &aᴀᴍᴀᴢɪɴɴɢ &9sᴛᴀʏ!"
       - ""
@@ -156,7 +168,7 @@ welcome-broadcasts:
   enabled: true
   messages:
     owner:
-      - "&6ᴛʜᴇ ᴏᴡɴᴇʀ &4&l%player% &6ᴊᴏɪɴᴇᴅ ᴛʜᴇ sᴇʀᴠᴇʀ!"
+      - "<b><gradient:#FF0000:#0300FF>ᴛʜᴇ ᴏᴡɴᴇʀ %player% ᴊᴏɪɴᴇᴅ ᴛʜᴇ sᴇʀᴠᴇʀ</gradient></b>"
     vip:
       - "&a&lVIP &e%player% &aᴊᴏɪɴᴇᴅ ᴛʜᴇ sᴇʀᴠᴇʀ!"
       - "&f[&a!&f] &eᴛʏᴘᴇ &f/wb <ᴘʟᴀʏᴇʀɴᴀᴍᴇ> &eᴛᴏ ᴡᴇʟᴄᴏᴍᴇ ᴛʜᴇ ᴘʟᴀʏᴇʀ ᴀɴᴅ ʀᴇᴄɪᴠᴇ &6EXTRA &eʀᴇᴡᴀʀᴅs!"
@@ -221,6 +233,32 @@ firework:
     - "CYAN"
 
   type: "BALL"
+
+# JOIN BOSSBAR
+
+bossbar:
+  enabled: true
+  # How long the bossbar stays visible (in seconds)
+  duration: 20
+  # Bossbar text (supports %player% placeholder and all color formats)
+  text: "<gradient:#FF0000:#FFAA00>✨ ᴡᴇʟᴄᴏᴍᴇ %player%! ✨</gradient>"
+  # Bossbar color (PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE)
+  color: "PURPLE"
+  # Bossbar style (SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20)
+  style: "SOLID"
+  
+  # Loop color settings
+  loop-color:
+    enabled: true
+    # How often the color changes (in seconds)
+    interval: 1
+    # Colors to cycle through
+    colors:
+      - "PURPLE"
+      - "BLUE"
+      - "GREEN"
+      - "YELLOW"
+      - "RED"
 
 #===================================================================
 #                        LEAVE SYSTEM
@@ -307,7 +345,7 @@ welcome-bounty:
   # This will be sent to the welcomed player after they are welcomed by someone.
   welcomed-message:
     - "&e&l                    sᴇʀᴠᴇʀ"
-    - "%player% &dᴡᴇʟᴄᴏᴍᴇᴅ ʏᴏᴜ ᴀɴᴅ ʏᴏᴜ ʀᴇᴄᴇɪᴠᴇᴅ ᴀ ʀᴇᴡᴀʀᴅ!"
+    - "%player% &dᴡᴇʟᴄᴏᴍᴇᴅ ʏᴏᴜ ᴀɴᴅ ʀᴇᴄᴇɪᴠᴇᴅ ᴀ ʀᴇᴡᴀʀᴅ!"
 
   # This will be heard by the player after they welcome someone.
   sound:
@@ -315,6 +353,57 @@ welcome-bounty:
     type: "ENTITY_PLAYER_LEVELUP"
     volume: 1.0
     pitch: 1.0
+
+```
+</details>
+</div>  
+
+<div>
+<details>
+<summary align="center">[ 📄 Click to view settings-messages.yml ]</summary>
+
+```yaml
+
+# This is the language file for some setting messages.
+# You can customize the messages for different languages here.
+# The keys in this file correspond to the keys used in the config.yml file for settings messages.
+# You can use color codes and placeholders in these messages as well.
+
+plugin-reload:
+  success: "<gradient:#55FF55:#00AA00>✅ ᴘʟᴜɢɪɴ ʀᴇʟᴏᴀᴅᴇᴅ sᴜᴄᴄᴇssꜰᴜʟʟʏ!</gradient>"
+  error: "<gradient:#FF5555:#AA0000>❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ʀᴇʟᴏᴀᴅɪɴɢ! ᴄʜᴇᴄᴋ ᴄᴏɴsᴏʟᴇ ꜰᴏʀ ᴅᴇᴛᴀɪʟs.</gradient>"
+
+
+uw-help:
+  header: "<gradient:#FFAA00:#FF5500>━━━━━━━━ <bold>ᴡᴇʟᴄᴏᴍᴇ ᴄᴏᴍᴍᴀɴᴅs</bold> ━━━━━━━━</gradient>"
+  wb: "<yellow>/ᴡʙ <ᴘʟᴀʏᴇʀ></yellow> <gray>- ᴡᴇʟᴄᴏᴍᴇ ᴀ ᴘʟᴀʏᴇʀ ᴀɴᴅ ᴇᴀʀɴ ʀᴇᴡᴀʀᴅs!</gray>"
+  uw-forcewelcome: "<red>/ᴜᴡ ꜰᴏʀᴄᴇᴡᴇʟᴄᴏᴍᴇ <ᴘʟᴀʏᴇʀ></red> <gray>- ꜰᴏʀᴄᴇ ᴡᴇʟᴄᴏᴍᴇ ᴀ ᴘʟᴀʏᴇʀ</gray>"
+  uw-resetcooldown: "<red>/ᴜᴡ ʀᴇsᴇᴛᴄᴏᴏʟᴅᴏᴡɴ <ᴘʟᴀʏᴇʀ></red> <gray>- ʀᴇsᴇᴛ ᴄᴏᴏʟᴅᴏᴡɴ</gray>"
+  uw-welcomeself: "<red>/ᴜᴡ ᴡᴇʟᴄᴏᴍᴇsᴇʟꜰ</red> <gray>- ᴛᴏɢɢʟᴇ sᴇʟꜰ-ᴡᴇʟᴄᴏᴍᴇ</gray>"
+  uw-reload: "<red>/ᴜᴡʀᴇʟᴏᴀᴅ</red> <gray>- ʀᴇʟᴏᴀᴅ ᴄᴏɴꜰɪɢ</gray>"
+  footer: "<gradient:#FFAA00:#FF5500>━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+
+uw-forcewelcome:
+  success: "<gradient:#55FF55:#00FF00>✅ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇ sᴇɴᴛ ᴛᴏ <yellow>%target%</yellow>!</gradient>"
+  error: "<gradient:#FF5555:#FF0000>❌ ꜰᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇ! ᴄʜᴇᴄᴋ ᴄᴏɴsᴏʟᴇ.</gradient>"
+uw-selfwelcome:
+  enabled: "<gradient:#55FF55:#00FF00>✅ sᴇʟꜰ-ᴡᴇʟᴄᴏᴍᴇ ɪs ɴᴏᴡ <bold>ᴇɴᴀʙʟᴇᴅ</bold>! ᴘʟᴀʏᴇʀs ᴄᴀɴ ᴡᴇʟᴄᴏᴍᴇ ᴛʜᴇᴍsᴇʟᴠᴇs.</gradient>"
+  disabled: "<gradient:#FF5555:#FF0000>🔒 sᴇʟꜰ-ᴡᴇʟᴄᴏᴍᴇ ɪs ɴᴏᴡ <bold>ᴅɪsᴀʙʟᴇᴅ</bold>! ᴘʟᴀʏᴇʀs ᴄᴀɴɴᴏᴛ ᴡᴇʟᴄᴏᴍᴇ ᴛʜᴇᴍsᴇʟᴠᴇs.</gradient>"
+uw-resetcooldown:
+  success: "<gradient:#55FF55:#00AA00>🔄 ᴄᴏᴏʟᴅᴏᴡɴ ꜰᴏʀ <yellow>%target%</yellow> ʜᴀs ʙᴇᴇɴ ʀᴇsᴇᴛ!</gradient>"
+  error: "<gradient:#FF5555:#AA0000>❌ ꜰᴀɪʟᴇᴅ ᴛᴏ ʀᴇsᴇᴛ ᴄᴏᴏʟᴅᴏᴡɴ! ᴄʜᴇᴄᴋ ᴄᴏɴsᴏʟᴇ.</gradient>"
+
+uw-unknownsubcommand: "<gradient:#FFAA00:#FF5500>⚠️ ᴜɴᴋɴᴏᴡɴ sᴜʙᴄᴏᴍᴍᴀɴᴅ! ᴜsᴇ <yellow>/ᴜᴡ ʜᴇʟᴘ</yellow> ꜰᴏʀ ᴀ ʟɪsᴛ.</gradient>"
+uw-only-players: "<gradient:#FF5555:#FF0000>🚫 ᴏɴʟʏ ᴘʟᴀʏᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ!</gradient>"
+uw-no-permission: "<gradient:#FF5555:#FF0000>🔒 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ!</gradient>"
+
+
+wb-player-not-found: "<gradient:#FF5555:#FF0000>🔍 ᴘʟᴀʏᴇʀ <yellow>%target%</yellow> ɴᴏᴛ ꜰᴏᴜɴᴅ ᴏʀ ɴᴏᴛ ᴏɴʟɪɴᴇ!</gradient>"
+wb-cooldown: "<gradient:#FFAA00:#FF5500>⏳ ʏᴏᴜ ᴍᴜsᴛ ᴡᴀɪᴛ <yellow>%time%</yellow> ʙᴇꜰᴏʀᴇ ᴡᴇʟᴄᴏᴍɪɴɢ <yellow>%target%</yellow> ᴀɢᴀɪɴ!</gradient>"
+wb-expired: "<gradient:#FF5555:#FF0000>⏰ <yellow>%target%</yellow> ᴄᴀɴ ɴᴏ ʟᴏɴɢᴇʀ ʙᴇ ᴡᴇʟᴄᴏᴍᴇᴅ! ᴛʜᴇʏ ᴊᴏɪɴᴇᴅ ᴏᴠᴇʀ <yellow>%time%</yellow> ᴀɢᴏ.</gradient>"
+wb-no-reward: "<gradient:#FFAA00:#FF5500>🎁 ɴᴏ ʀᴇᴡᴀʀᴅ ᴀᴠᴀɪʟᴀʙʟᴇ ꜰᴏʀ ᴡᴇʟᴄᴏᴍɪɴɢ <yellow>%target%</yellow>! ɴᴏ ʀᴇᴡᴀʀᴅ ᴄᴏɴꜰɪɢᴜʀᴇᴅ ꜰᴏʀ ᴛʜᴇɪʀ ʀᴀɴᴋ.</gradient>"
+wb-no-selfwelcome: "<gradient:#FF5555:#FF0000>🚫 ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴡᴇʟᴄᴏᴍᴇ ʏᴏᴜʀsᴇʟꜰ!</gradient>"
+
 ```
 </details>
 </div>  
