@@ -1,4 +1,5 @@
-<img width="1774" height="887" alt="UltimateWelcome" src="https://github.com/user-attachments/assets/aefacb66-d0b9-438c-b98e-300d315e32a6" />
+<img width="1774" height="887" alt="uw (2)" src="https://github.com/user-attachments/assets/2a41264a-71fa-47ef-8ab1-2446198a08bf" />
+
 
 A powerful, lightweight and fully configurable Minecraft Paper plugin that enhances your server's join/leave experience with ranks, messages, commands execution, sounds, titles, fireworks,bossbars and a full welcome bounty system.
 
